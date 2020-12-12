@@ -12,3 +12,7 @@ Basically what we want is a compressed representation of the train of thought so
 
 
 
+At the core, a train of thought is just a sequence of logic.
+Instead of writing down a logical explanations again and again,
+it would be better if we can combine those previously established logical explanations together in order to create a new one.
+And it would be great if it can automatically do that for us (in natural language)
