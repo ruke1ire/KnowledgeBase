@@ -10,9 +10,14 @@ If so, how do I create a new train of thought while creating key points with eas
 
 Basically what we want is a compressed representation of the train of thought so that when trying to create another train of thought, we can just visually experience the compressed form of knowledge that has previously been established which would save time and effort in trying to re-understand the previous train of thought. 
 
-
-
 At the core, a train of thought is just a sequence of logic.
 Instead of writing down a logical explanations again and again,
 it would be better if we can combine those previously established logical explanations together in order to create a new one.
 And it would be great if it can automatically do that for us (in natural language)
+
+
+### Example Implementation:
+
+1. Find all words in [wikipedia](https://www.wikipedia.org/) with NP (Noun Phrase) -> VP (Verb Phrase) -> NP. *Note that this is just to limit the form of logic to make it simpler*
+2. Set all the NP as entities and VP as connections in a graph model.
+3. Any relationship between two NP can be traced. NP -\*-> NP.
