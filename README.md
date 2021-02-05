@@ -16,8 +16,24 @@ it would be better if we can combine those previously established logical explan
 And it would be great if it can automatically do that for us (in natural language)
 
 
-### Example Implementation:
+## Example Implementation:
 
-1. Find all words in [wikipedia](https://www.wikipedia.org/) with NP (Noun Phrase) -> VP (Verb Phrase) -> NP. *Note that this is just to limit the form of logic to make it simpler*
+1. Find all words in [wikipedia](https://www.wikipedia.org/) with **NP** (Noun Phrase) -- **VP** (Verb Phrase) -- **NP**. *Note that this is just to limit the form of logic to make it simpler*
 2. Set all the NP as entities and VP as connections in a graph model.
-3. Any relationship between two NP can be traced. NP -\*-> NP.
+3. Any relationship between two NP can be traced. NP -\*- NP.
+
+### Example NP -- *VP* -- NP
+
+- Earth *contains* water.
+- Earth *contains* air.
+- Earth *contains* land.
+- Plants *grow* on land.
+- Animals *eat* plants.
+- Humans *eat* animals.
+
+### Example Query
+
+Earth -\*- Humans:
+
+- Earth contains land which grows plants, which animals eat, which humans eat.
+
