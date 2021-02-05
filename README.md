@@ -28,12 +28,21 @@ And it would be great if it can automatically do that for us (in natural languag
 - Earth *contains* air.
 - Earth *contains* land.
 - Plants *grow* on land.
+- Sharks *live* in water.
 - Animals *eat* plants.
 - Humans *eat* animals.
+- Humans *live* on Earth.
+- Sharks *eat* animals.
+- Humans *are* animals.
 
 ### Example Query
 
-Earth -\*- Humans:
+**Earth -\*- Humans**
 
-- Earth contains land which grows plants, which animals eat, which humans eat.
+1. Earth, which humans live.
+2. Earth contains land which grows plants, which animals eat, which humans eat.
 
+**Sharks -\*- Humans**
+
+1. Sharks eats animals and humans are animals.
+2. Sharks live in water, which earth contains, which contains land, which plants grow, which animals eat, which humans eat.
