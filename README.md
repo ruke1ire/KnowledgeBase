@@ -2,7 +2,7 @@
 
 There seems to be an endless amount of information with much less time to think or structure that information. How can we store information so that it is easily accessible in the future? 
 
-What I continually experience is that writing notes down is good for the storing the current train of thought. But when we want to relate two trains of thoughts together, it is structurally difficult connect them in a 2D space. Furthermore, a train of thought is usually useful when trying to understand something but it can be difficult to find the key points when reading it in the future. 
+What I continually experience is that writing notes down is good for the storing the current train of thought. But when we want to relate two trains of thoughts together, it is structurally difficult to connect them in a 2D space. Furthermore, a train of thought is usually useful when trying to understand something but it can be difficult to find the key points when reading it in the future. 
 
 How can I understand something I once understood without having to read through the full train of thought? 
 - Maybe by storing the key points/entities when initially writing down the train of thought?
@@ -15,36 +15,27 @@ Instead of writing down a logical explanations again and again,
 it would be better if we can combine those previously established logical explanations together in order to create a new one.
 And it would be great if it can automatically do that for us (in natural language)
 
+---
 
-## Example Implementation:
+Since facts are usually given as declarative sentences. The phrasal structure of facts follow ( S →  NP →  VP ). 
 
-### Simple Declarative Sentences
+- The cat | jumps high.
+- The goverment | is ineffective.
+- The sun | is white.
+- Shrek | is love.
+- Shrek | is life.
+- Force | equals the change in momentum.
+- Momentum | is the product of mass and velocity.
+- Velocity | is the change in position over time.
+- Facts | are usually given as declarative sentences.
+- Declarative sentences | have the structure ( S →  NP →  VP ). 
 
-1. Find all words in [wikipedia](https://www.wikipedia.org/) with **NP** (Noun Phrase) -- **VP** (Verb Phrase) -- **NP**. *Note that this is just to limit the form of logic to make it simpler*
-2. Set all the NP as entities and VP as connections in a graph model.
-3. Any relationship between two NP can be traced. NP -\*- NP.
+Moreover, verb phrases have a single verb followed by noun phrases and optionally prepositional phrases. Therefore, the strucutre follows something like ( S →  NP →  verb →  ( NP | NP PP | PP ) ). This structure can be modelled as a graph with NPs as entities and verbs as connections.
 
-### Example NP -- *VP* -- NP
+By modelling facts into graphs, a sequence of facts can thus be traversed to complete a train of thought.
 
-- Earth *contains* water.
-- Earth *contains* air.
-- Earth *contains* land.
-- Plants *grow* on land.
-- Sharks *live* in water.
-- Animals *eat* plants.
-- Humans *eat* animals.
-- Humans *live* on Earth.
-- Sharks *eat* animals.
-- Humans *are* animals.
+- NP ← \*→  NP
+- \*→  NP
+- NP →  verb \*→ 
 
-### Example Query
-
-**Earth -\*- Humans**
-
-1. Earth, which humans live.
-2. Earth contains land which grows plants, which animals eat, which humans eat.
-
-**Sharks -\*- Humans**
-
-1. Sharks eats animals and humans are animals.
-2. Sharks live in water, which earth contains, which contains land, which plants grow, which animals eat, which humans eat.
+---
