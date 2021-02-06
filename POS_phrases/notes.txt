@@ -1,0 +1,25 @@
+PARTS OF SPEECH:
+- Adjective:    Describes properties
+- Adverb:       Verb modifiers of time, place, manner
+- Noun:         Things, objects, person, places
+- Verb:         Actions and processes
+- Proper Noun:  Name of a person, organization, place
+- Interjection: Exclamation, greetings, etc.
+- Adposition:   (Pre/Postposition) Marks a noun's spacial/temporal or other relations.
+- Auxilary:     Helping verbs, marking tense, aspect, mood, etc.
+- CCONJ:        Joins 2 phrases/clauses.
+- Determiner:   Marks noun phrase properties.
+- Numeral:      Numbers
+- Particle:     A preposition-like form used with a verb.
+- Pronoun:      Shorthand for referring to an entity.
+- SCONJ:        Joins a main clause with a subordinate clause.
+
+4 TYPES OF SENTENCES:
+    - Declarative:      | S -> NP -> VP         | "I prefer a morning flight"
+    - Imperative:       | S -> VP               | "Show me the lowest fare"
+    - Yes-No Question:  | S -> Aux -> NP -> VP  | "Do any of these flights have stops?"
+    - WH- Question:   
+        - Subject:      | S -> Wh -> NP -> VP   | "What airlines fly from Burbank to Denver?"
+        - Non-Subject:  | S -> Wh -> NP -> Aux -> NP -> VP 
+
+

@@ -1,0 +1,6 @@
+Words and phrases in latent space:
+    - Vector semantics and embedding (SLP3)
+    - Modeling Sentences in the Latent Space (paper)
+
+Parts of Speech and Phrases:
+    - Sequence Labeling for Parts of Speech and Named Entities (SLP3)

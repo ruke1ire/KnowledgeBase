@@ -18,6 +18,8 @@ And it would be great if it can automatically do that for us (in natural languag
 
 ## Example Implementation:
 
+### Simple Declarative Sentences
+
 1. Find all words in [wikipedia](https://www.wikipedia.org/) with **NP** (Noun Phrase) -- **VP** (Verb Phrase) -- **NP**. *Note that this is just to limit the form of logic to make it simpler*
 2. Set all the NP as entities and VP as connections in a graph model.
 3. Any relationship between two NP can be traced. NP -\*- NP.
